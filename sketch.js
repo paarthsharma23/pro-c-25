@@ -42,8 +42,12 @@ function draw() {
   this.db2.display();
   this.db3.display();
   this.dbpic.display();
- //console.log(this.paper.body.position.y);
-  reset();
+//console.log(this.paper.body.position.y);
+//  if(keyDown("space")){
+//    this.paper.body.position.x=50;
+//    this.paper.body.position.y=200;
+//    this.paper.body.radius=30;
+//  }
   drawSprites(); 
 }
 
@@ -55,14 +59,9 @@ function keyPressed (){
   }  
   gamestate=END;
   }
-
-function reset (){
- if( gamestate=== END && keyDown("space") ){
- this.paper.body.position.x=50;
- this.paper.body.position.y=200;
- this.paper.body.radius=30;
- }
-}
+// function keyPressed (){
+  
+// }
 
 
 
